@@ -2,9 +2,41 @@
 <html lang="pt-br">
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/uikit.min.css">
+		<script type="text/javascript" src="js/uikit.min.js"></script>
+		<script type="text/javascript" src="js/uikit-icons.min.js"></script>
 	</head>
 	<body>
-		<h1>Login</h1>
-		<div></div>
+		<div class="uk-container uk-flex uk-flex-center uk-margin-xlarge-top">
+			<div class="uk-width-1-4">
+				<img src="media/contractcontrol.svg" alt="Contract Control">
+				<h3 class="uk-text-center uk-text-primary">Contract Control</h3>
+				<p class="uk-text-secondary uk-text-left">Controle e gerenciamento de contratos.</p>
+			</div>
+			<div class="uk-card uk-card-body uk-width-1-4 uk-card-primary">
+				<h3>Login</h3>
+				<form id="my-form" name="my-form">
+					<div class="uk-margin">
+						<div class="uk-inline">
+							<span class="uk-form-icon"
+							uk-icon="user"></span>
+							<input class="uk-input" type="text"/>
+						</div>
+					</div>
+					<div class="uk-margin">
+						<div class="uk-inline">
+							<span class="uk-form-icon" href="#" uk-icon="lock"></span>
+							<input class="uk-input" type="text">
+						</div>
+					</div>
+					<div class="uk-inline uk-width-1-1">
+						<button class="uk-button uk-button-default uk-margin-small-bottom uk-width-1-1" uk-icon="sign-in">Sign-in</button>
+					</div>
+					<div class="uk-inline uk-width-1-1">
+						<a href="#" class="uk-link-muted">Sem acesso? Faça a requisição.</a>
+					</div>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>
