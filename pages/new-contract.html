@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/uikit.min.css">
+		<script type="text/javascript" src="../js/uikit.min.js"></script>
+		<script type="text/javascript" src="../js/uikit-icons.min.js"></script>
+		<script type="text/javascript" src="../js/new-contract.js"></script>
+	</head>
+	<body>
+		<div class="uk-container uk-container-small " id="new-contract-content">
+			<div id="new-contract-form" class="uk-section">
+			<h2>Novo Contrato</h2>
+				<form id="new-contract-form">
+				
+				<div class="uk-position-relative uk-visible-toggle" uk-slider="center:true">
+					<div class="uk-slider-items uk-grid uk-grid-match" uk-height-viewports="offset-top: true, offset-bottom: 30">
+						<div class="uk-width-3-4">
+							<fieldset class="uk-fieldset">
+								<legend class="uk-legend">
+									Dados do Contratante
+								</legend>
+								
+								<div class="uk-margin"><input class="uk-input" type="text" placeholder="Nome do Contratante/Razão Social"/></div>
+								<div class="uk-margin"><input class="uk-input" type="mail" placeholder="E-mail"/></div>
+								<div class="uk-margin"><input class="uk-input" type="text" placeholder="Telefone "/></div>
+								<div class="uk-flex">
+									<input class="uk-input" type="text" placeholder="Cidade"/>
+									<input class="uk-input uk-width-1-3" type="text" placeholder="CEP: (xxxxx-xxx)"/>
+									<select class="uk-select uk-width-1-4">
+										<option>AM</option>
+										<option>AP</option>
+									</select>							
+								</div>
+								<div class="uk-flex">
+									<input class="uk-input" type="text" placeholder="Endereço"/>
+									<input class="uk-input uk-width-1-4" type="text" placeholder="Número"/>
+									<input class="uk-input uk-width-1-2" type="text" placeholder="Complemento"/>
+								</div>
+								<div class="uk-margin">
+									<select class="uk-select">
+										<option>CNPJ</option>
+										<option>CPF</option>
+									</select>
+								</div>
+							</fieldset>
+						</div>
+						
+						<div class="uk-width-3-4">
+							<fieldset class="uk-fieldset">
+								<legend class="uk-legend">
+									Informações sobre o Projeto
+								</legend>
+							</fieldset>
+						</div>
+					</div>
+					
+					<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+				</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
