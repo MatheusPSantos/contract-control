@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="../css/uikit.min.css">
 		<link rel="stylesheet" href="../css/dashboard.css">
@@ -54,7 +55,7 @@
 				<img class="custom-logo" src="img/dashboard-logo.svg" alt="">
 			</div>
 			<div class="left-content-box  content-box-dark">
-				<img src="img/avatar.svg" alt="" class="uk-border-circle profile-img">
+				<img src="https://cdn.pensador.com/img/authors/ho/me/homer-simpson-l.jpg" alt="" class="uk-border-circle profile-img">
 				<h4 class="uk-text-center uk-margin-remove-vertical text-light">Nome do Usuário</h4>
 				
 				<div class="uk-position-relative uk-text-center uk-display-block">
@@ -62,10 +63,10 @@
 				    <!-- user dropdown -->
 				    <div class="uk-dropdown user-drop" data-uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-bottom-small; duration: 150">
 				    	<ul class="uk-nav uk-dropdown-nav uk-text-left">
-								<li><a href="#"><span data-uk-icon="icon: info"></span> Resumo</a></li>
-								<li><a href="#"><span data-uk-icon="icon: refresh"></span> Editar</a></li>
-								<li class="uk-nav-divider"></li>
-								<li><a href="#"><span data-uk-icon="icon: sign-out"></span> Sign Out</a></li>
+							<li><a href="#"><span data-uk-icon="icon: info"></span> Resumo</a></li>
+							<li><a href="#"><span data-uk-icon="icon: refresh"></span> Editar</a></li>
+							<li class="uk-nav-divider"></li>
+							<li><a href="#"><span data-uk-icon="icon: sign-out"></span> Sign Out</a></li>
 					    </ul>
 				    </div>
 				    <!-- /user dropdown -->
@@ -103,7 +104,14 @@
 		
 		<div id="content" data-uk-height-viewport="expand: true">
 			<div class="uk-container uk-container-expand">
-
+				<div class="uk-section uk-flex uk-flex-center" id="start-buttons">
+					<button class="uk-button uk-button-primary uk-button-large" data-uk-icon="icon: bolt">
+						Novo contrato
+					</button>
+					<button class="uk-button uk-button-default uk-button-large" data-uk-icon="icon: pencil">
+						Editar contratos
+					</button>
+				</div>
 
 				<footer class="uk-section uk-section-small uk-text-center">
 					<hr>
