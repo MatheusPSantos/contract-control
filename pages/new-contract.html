@@ -24,6 +24,17 @@
 								</legend>
 								
 								<div class="uk-margin"><input class="uk-input" type="text" placeholder="Nome do Contratante/Razão Social"/></div>
+								<div class="uk-margin"><input class="uk-input" type="text" placeholder="Nome do Representante da Contratante"> </div>
+								<div class="uk-flex">
+									<input class="uk-input" type="text" placeholder="Profissão do Representante">
+									<input class="uk-input" type="text" placeholder="Estado Civil do Representante">
+									<input class="uk-input" type="text" placeholder="CPF do Representante">
+									<input class="uk-input" type="text" placeholder="RG do Representante">
+								</div>
+								<div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+									<label><input class="uk-radio" type="radio" name="radio2" checked> &nbsp; Srª.</label>
+									<label><input class="uk-radio" type="radio" name="radio2"> &nbsp; Sr.</label>
+								</div>
 								<div class="uk-margin"><input class="uk-input" type="mail" placeholder="E-mail"/></div>
 								<div class="uk-margin"><input class="uk-input" type="text" placeholder="Telefone "/></div>
 								<div class="uk-flex">
@@ -53,11 +64,55 @@
 								<legend class="uk-legend">
 									Informações sobre o Projeto
 								</legend>
-								
 								<div class="uk-margin"><input type="text" class="uk-input" placeholder="Nome Completo dos Responsáveis pelo projeto separados por ',' ."></div>
 								<div class="uk-margin uk-flex">
 									<input type="text" class="uk-input" placeholder="Preço do Projeto" id="precoProjeto">
-									<input type="text" class="uk-input" placeholder="Prazo do Projeto (em dias)" id="prazoProjeto">
+									<input type="number" min="1" class="uk-input" placeholder="Prazo do Projeto (em dias)" id="prazoProjeto">
+								</div>
+								<div class="uk-margin">
+									<label class="uk-form-label" for="data-fechamento-contrato">
+										Data do Fechamento do Contrato
+									</label>
+									<input type="date" class="uk-datepicker" name="data-fechamento-contrato">
+								</div>
+								<div class="uk-margin">
+									<input type="number" step="0.5" min="1" class="uk-input" placeholder="Multa em X% do valor do serviço para cada semana de atraso após a data de vencimento" id="prazoProjeto">
+								</div>
+								<div class="uk-margin">
+									<label class="uk-form-label" for="especificacoes-servico">
+										Especificações do Serviço (Parágrafos separados).
+									</label>
+									<textarea class="uk-input"  name="especificacoes-servico" placeholder="Exemplo: Parágrafo 1. LoremImpsum...">
+									</textarea>
+								</div>
+							</fieldset>
+						</div>
+						
+						<div class="uk-width-3-4">
+							<fieldset class="uk-fieldset">
+								<legend class="uk-legend">
+									Das Obrigações da Contratante
+								</legend>
+								<div class="uk-margin">
+									<label class="uk-form-label uk-text-capitalize uk-text-emphasis" for="max-analise">
+										Prazo Máximo De Resposta
+										<p class="uk-text-muted">Para responder as pendências requeridas pelos representates executores do Projeto.</p>
+									</label>
+									<input type="number" class="uk-input" name="max-analise" min="1">
+								</div>
+								<div class="uk-margin">
+									<label class="uk-form-label uk-text-capitalize uk-text-emphasis" for="max-analise">
+										Extensão do prazo de entrega
+										<p class="uk-text-muted">O prazo de entrega se extenderá em uma proporção de X dias úteis para cada dia útil de atraso.</p>
+									</label>
+									<input type="number" class="uk-input" name="max-analise" min="1">
+								</div>
+								<div class="uk-margin">
+									<label class="uk-form-label uk-text-capitalize uk-text-emphasis" for="max-analise">
+										Prazo para reclamação
+										<p class="uk-text-muted">Dias úteis após a entrega do serviço para reclamação ou assuntos similares a respeito do serviço.</p>
+									</label>
+									<input type="number" class="uk-input" name="max-analise" min="1">
 								</div>
 							</fieldset>
 						</div>
@@ -67,6 +122,22 @@
 					<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 				</div>
 				</form>
+				
+				<div class="uk-container uk-container-expanded ">
+					<div class="uk-section uk-flex uk-flex-center" id="start-buttons">
+						<div class="uk-margin">
+							<button class="uk-button uk-button-primary uk-button-large" data-uk-icon="icon: forward">
+								Criar Contrato
+							</button>
+							<button class="uk-button uk-button-secondary uk-button-large" data-uk-icon="icon: refresh">
+								Limpar Formulário
+							</button>
+							<button class="uk-button uk-button-danger uk-button-large" data-uk-icon="icon: ban">
+								Cancelar Novo Contrato
+							</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
